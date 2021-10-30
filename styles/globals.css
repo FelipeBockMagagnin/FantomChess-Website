@@ -108,10 +108,9 @@ a {
   justify-content: center;
   margin-top: 0px;
   margin-bottom: 0px;
-  font-family: 'PRESS START 2P';
+  font-family: "PRESS START 2P";
   animation: button 5s ease infinite;
 }
-
 
 .mr-10 {
   margin-right: 10px !important;
@@ -158,9 +157,17 @@ a {
     margin-top: 10px;
   }
 
-  
+  video {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    top: 0 px;
+    transition: opacity 400ms ease 0s;
+    opacity: 1;
+    filter: saturate(100%) brightness(80%) contrast(100%);
+  }
 
-  
   .form-container {
     margin-top: 20px;
     width: 90vw;
@@ -172,13 +179,12 @@ a {
 
   .image-frame {
     height: 150px;
-    flex: auto !important
+    flex: auto !important;
   }
 
   .button {
-    margin-top:  10px;
+    margin-top: 10px;
   }
-  
 }
 
 @media (max-width: 400px) {
@@ -197,8 +203,7 @@ a {
     overflow-x: auto;
   }
 
-  #app{
+  #app {
     height: 125vh;
-
   }
 }
