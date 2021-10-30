@@ -4,9 +4,9 @@ let Web3 = require("web3");
 import axios from "axios";
 
 export default function analyse() {
-       
+
     const router = useRouter()
-    const id  = router.query.id
+    const id = router.query.id
 
     const [data, setData] = useState(null);
     const [isReady, setIsReady] = useState(false);
@@ -547,18 +547,26 @@ export default function analyse() {
         }
     ];
 
-    useEffect(() => { 
-        if(!router.isReady) return;
-        
+    useEffect(() => {
+        if (!router.isReady) return;
+
+
+
         connectWallet();
     }, [router.isReady]);
+
+    async function startChess(data) {
+        const PGNV = await import('@mliebelt/pgn-viewer');
+        console.log(PGNV)
+        PGNV.pgnView('board', { pgn: data.attributes.filter(x => x.trait_type == 'PGN')[0].value, pieceStyle: 'merida' });
+    }
 
     function connectWallet() {
         if (!window.ethereum) {
             alert("Please install MetaMask");
             setIsReady(false);
             return;
-        }        
+        }
 
         ethereum
             .request({ method: "eth_requestAccounts" })
@@ -580,6 +588,9 @@ export default function analyse() {
 
                 axios.get(jsonAddress + id + '.json').then(res => {
                     setData(res.data);
+
+                    startChess(res.data);
+
                     console.log(res.data)
                 }).catch(err => {
                     console.log(err)
@@ -599,12 +610,17 @@ export default function analyse() {
                 </button>
             </div>
 
-            <div id="app">
-                <div className="form-container" style={{ width: '90vw' }}>
-                    {data && <div>
-                        {data.attributes.filter(x => x.trait_type == 'PGN')[0].value}
+            
+
+            <div id='app'>
+
+            <div style={{backgroundColor: 'white', padding: 10, borderTopLeftRadius: 10, borderTopRightRadius: 10}}>
+                Fantom Chess #3
+            </div>
+                <div className="form-container" style={{ width: 'auto', height: 'auto', display: 'flex', justifyContent: 'center', marginBottom:50 }}>
+                    <div>
+                        <div id='board' ></div>
                     </div>
-                    }
                 </div>
             </div>
         </Fragment>

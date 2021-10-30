@@ -637,7 +637,7 @@ function Index() {
       </div>
 
       <div id="app">
-        <div className="form-container" style={{ width: '90vw', maxHeight: '70vh', overflowY: 'scroll' }}>
+        <div className="form-container" style={{ width: '82vw', maxHeight: '70vh', overflowY: 'scroll' }}>
           <div style={{ display: 'flex', flexWrap: 'wrap', flexDirection: 'row' }}>
             {games.length == 0 && <div>You don't have a Fantom Chess</div>}
 

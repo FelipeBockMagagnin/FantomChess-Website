@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mliebelt/pgn-viewer": "^1.5.12",
     "axios": "^0.24.0",
     "cors": "^2.8.5",
     "next": "^11.1.2",
