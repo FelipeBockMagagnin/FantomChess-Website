@@ -615,7 +615,7 @@ export default function analyse() {
             <div id='app'>
 
             <div style={{backgroundColor: 'white', padding: 10, borderTopLeftRadius: 10, borderTopRightRadius: 10}}>
-                Fantom Chess #3
+                Fantom Chess #{id}
             </div>
                 <div className="form-container" style={{ width: 'auto', height: 'auto', display: 'flex', justifyContent: 'center', marginBottom:50 }}>
                     <div>
