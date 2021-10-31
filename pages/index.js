@@ -681,10 +681,10 @@ function Index() {
     <Fragment>
       <div className="geeks"></div>
       <div className="header">
-        <div className="tittle colorGradient">Fantom Chess</div>
+        <a className="tittle colorGradient" href='/'>Fantom Chess</a>
 
         <div className='menus'>
-          <div>You own ({balance}) games</div>
+          <div>You own (<a href='/view' style={{color: 'blue', textDecoration: 'underline'}}>{balance}</a>) games</div>
         </div>
 
         <button className='button' onClick={connectWallet}>

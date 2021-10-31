@@ -603,7 +603,7 @@ export default function analyse() {
         <Fragment>
             <div className="geeks"></div>
             <div className="header">
-                <div className="tittle colorGradient">Fantom Chess</div>
+                <a className="tittle colorGradient" href='/'>Fantom Chess</a>
 
                 <button className='button' onClick={connectWallet}>
                     {isReady ? address?.substring(0, 6) + "..." + address?.substring(address.length - 4, address.length) : "Connect"} { }

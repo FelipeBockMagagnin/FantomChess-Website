@@ -625,7 +625,7 @@ function Index() {
     <Fragment>
       <div className="geeks"></div>
       <div className="header">
-        <div className="tittle colorGradient">Fantom Chess</div>
+        <a className="tittle colorGradient" href='/'>Fantom Chess</a>
 
         <div className='menus'>
           <div>You own ({balance}) games</div>
@@ -636,7 +636,7 @@ function Index() {
         </button>
       </div>
 
-      <div id="app">
+      <div id="app" style={{height: '100vh'}}>
         <div className="form-container" style={{ width: '82vw', maxHeight: '70vh', overflowY: 'scroll' }}>
           <div style={{ display: 'flex', flexWrap: 'wrap', flexDirection: 'row' }}>
             {games.length == 0 && <div>You don't have a Fantom Chess</div>}

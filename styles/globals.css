@@ -157,16 +157,6 @@ a {
     margin-top: 10px;
   }
 
-  video {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    object-fit: cover;
-    top: 0 px;
-    transition: opacity 400ms ease 0s;
-    opacity: 1;
-    filter: saturate(100%) brightness(80%) contrast(100%);
-  }
 
   .form-container {
     margin-top: 20px;
