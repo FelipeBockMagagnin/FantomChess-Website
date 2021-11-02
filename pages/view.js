@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Swal from 'sweetalert2'
 import axios from "axios";
 import analyse from "./analyse/[id]";
+import rarity from '../src/utils/chessRarity.json';
 
 function Index() {
   const [web3, setWeb3] = useState(null);
@@ -655,11 +656,11 @@ function Index() {
 
                   <div style={{display: 'flex', marginTop: 10}}>
                     <span className='button' style={{width: '50%', fontSize: 11, height: 30, borderRadius: 0, backgroundColor: '#000', animation: 'none'}} >
-                      Score: ???
+                      Score: {rarity.filter(x => x.id == game.nft.tokenId)[0].score}
                     </span>
 
                     <span className='button' style={{width: '50%', fontSize: 11, height: 30, borderRadius: 0, backgroundColor: '#000', animation: 'none'}} >
-                      Rank: #???
+                      Rank: #{rarity.indexOf(rarity.filter(x => x.score == rarity.filter(x => x.id == game.nft.tokenId)[0].score)[0])+1}
                     </span>
                   </div>
                 </div>
