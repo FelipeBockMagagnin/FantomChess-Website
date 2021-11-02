@@ -544,7 +544,7 @@ function Index() {
   ];
 
   let contractAddress = "0x46350eda48b3aafc4c403ff02c024e76ae22e803";
-  let jsonAddress = 'https://gateway.pinata.cloud/ipfs/QmRa2wmxdABxy1tXXdWtEJkpXoucUDfxGYFFof1W9PcWKc/';
+  let jsonAddress = 'https://dweb.link/ipfs/QmRa2wmxdABxy1tXXdWtEJkpXoucUDfxGYFFof1W9PcWKc/';
 
   useEffect(() => {
     connectWallet();
