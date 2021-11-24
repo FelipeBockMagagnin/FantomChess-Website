@@ -70,6 +70,12 @@ function Index() {
                     <br />
                     <br />
 
+                    Sign up for the tournament <a style={{color: "blue", textDecoration: 'underline'}} href='https://lichess.org/tournament/1P2D5s9V'>here</a> (It's FREE)
+
+                    <br />
+                    <br />
+
+
                     <p>Each Fantom Chess minted add <p className='colorGradient'>10 FTM</p> to the prize pool.</p>
                     <br></br>
                     <a style={{marginLeft: 'auto', marginRight: 'auto'}} href='/' className='button'>Mint</a>
