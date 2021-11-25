@@ -12,10 +12,10 @@ function Index() {
         .then(data => {
             console.log(data.data);
 
-            let onlyMints = data.data.result.filter(x => x.input == '0x4e71d92d' && x.isError == 0);
+            let onlyMints = data.data.result.filter(x => x.input == '0x4e71d92d' && x.isError == 0 && x.from != "0xfc3778f4b877b25a2a6b501a6bd987bb6b43f7e0");
             console.log(onlyMints);
 
-            let totalPrize = 0;
+            let totalPrize = 10;
             
             onlyMints.forEach(x => {
                 totalPrize += Number(x.value)
