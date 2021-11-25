@@ -15,7 +15,7 @@ function Index() {
             let onlyMints = data.data.result.filter(x => x.input == '0x4e71d92d' && x.isError == 0 && x.from != "0xfc3778f4b877b25a2a6b501a6bd987bb6b43f7e0");
             console.log(onlyMints);
 
-            let totalPrize = 10;
+            let totalPrize = 20000000000000000000;
             
             onlyMints.forEach(x => {
                 totalPrize += Number(x.value)
