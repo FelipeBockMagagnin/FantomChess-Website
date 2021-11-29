@@ -687,9 +687,9 @@ function Index() {
           <div>You own (<a href='/view' style={{color: 'blue', textDecoration: 'underline'}}>{balance}</a>) games</div>
         </div>
 
-        <div className='menus'>
+        {/* <div className='menus'>
         🏆<a href='/tournaments' style={{color: 'blue', textDecoration: 'underline'}}>Tournaments</a>🏆
-        </div>
+        </div> */}
 
         <button className='button' onClick={connectWallet}>
           {isReady ? address?.substring(0, 6) + "..." + address?.substring(address.length - 4, address.length) : "Connect" } {}
