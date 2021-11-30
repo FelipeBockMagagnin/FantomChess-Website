@@ -29,14 +29,14 @@ function Index() {
                             <h3 className='colorGradient'>1º Place (60%)</h3>
                             <h4>{total*0.6} FTM</h4>
                             <h4>+</h4>
-                            <h4>Rookie Penguin</h4>
+                            <h4>🐧Rookie Penguin</h4>
                         </div>
 
                         <div style={{flex: 1}}>
                             <h3 className='colorGradient'>2º Place (25%)</h3>
                             <h4>{total*0.25} FTM </h4>
                             <h4>+</h4>
-                            <h4>Fantom Chess</h4>
+                            <h4>♟Fantom Chess</h4>
                         </div>
 
                         <div style={{flex: 1}}>
