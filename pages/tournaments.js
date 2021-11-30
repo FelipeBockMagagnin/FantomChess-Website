@@ -55,7 +55,7 @@ function Index() {
                     <br></br>
                     <br></br>
                     <br></br>
-                    <a style={{marginLeft: 'auto', marginRight: 'auto'}} href='https://lichess.org/tournament/1P2D5s9V' className='button'>Sign up</a>
+                    <a style={{marginLeft: 'auto', marginRight: 'auto'}} href='https://lichess.org/tournament/lXKW5xWo' className='button'>Sign up</a>
                 </div>
             </div>
         </Fragment>
