@@ -39,11 +39,7 @@ function Index() {
                             <h4>♟Fantom Chess</h4>
                         </div>
 
-                        <div style={{flex: 1, marginBottom: 40}}>
-                            <h3 className='colorGradient'>3º Place (20%)</h3>
-                            
-                            <h4>{total*0.20} FTM</h4>
-                        </div>
+                        
 
                         
                     </div>
@@ -54,7 +50,11 @@ function Index() {
                     <br />
                     <br />
                     <div className='mobile-flex' style={{ display: "flex", alignItems: 'flex-end' }}>
-
+                    <div style={{flex: 1}}>
+                            <h3 className='colorGradient'>3º Place (20%)</h3>
+                            
+                            <h4>{total*0.20} FTM</h4>
+                        </div>
                     <div style={{flex: 1}}>
                             <h3 className='colorGradient'>4º Place (10%)</h3>
                             
