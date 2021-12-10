@@ -732,20 +732,26 @@ function Index() {
               <br />
 
               <a href='https://discord.gg/cDh6gbn59A' className='mr-10' target='_blank'>
-                <Image src='/assets/discord.svg' alt='chess game' width='20' height='20' />
+                <Image src='/assets/discord.svg' alt='discord' width='20' height='20' />
               </a>
 
               <a href='https://twitter.com/FantomChess' target='_blank' className='mr-10'>
-                <Image src='/assets/twitter.svg' alt='chess game' width='20' height='20' />
+                <Image src='/assets/twitter.svg' alt='twitter' width='20' height='20' />
               </a>
 
               <a href='https://ftmscan.com/address/0x46350eda48b3aafc4c403ff02c024e76ae22e803' className='mr-10' target='_blank'>
-                <Image src='/assets/fantom.svg' alt='chess game' width='20' height='20' />
+                <Image src='/assets/fantom.svg' alt='ftmscan' width='20' height='20' />
               </a>
 
-              <a href='https://paintswap.finance/marketplace/collections/0x46350eda48b3aafc4c403ff02c024e76ae22e803' target='_blank'>
-                <Image src='/assets/paint.png' alt='chess game' width='20' height='20' />
+              <a href='https://paintswap.finance/marketplace/collections/0x46350eda48b3aafc4c403ff02c024e76ae22e803' className='mr-10' target='_blank'>
+                <Image src='/assets/paint.png' alt='paintswap' width='20' height='20' />
               </a>
+
+              <a href='https://nftkey.app/collections/fantomchess/' target='_blank'>
+                <Image src='/assets/nftkey.png' alt='nftkey' width='20' height='20' />
+              </a>
+
+              
             </div>
           </div>
 
