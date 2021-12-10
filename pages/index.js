@@ -749,10 +749,6 @@ function Index() {
             </div>
           </div>
 
-          <br />
-
-          <p>Join our Tournament <a href='/tournaments' style={{color: 'blue', textDecoration: 'underline'}}>here</a>🏆. Prize <p className='colorGradient'>100 FTM</p></p>
-
           <br/>
           
           {isReady && <div> Minted {supply}/{maxMintable}</div>}
