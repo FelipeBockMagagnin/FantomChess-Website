@@ -1,13 +1,12 @@
 import React, { useState, Fragment } from "react";
 
 function Index() {
-    const [total, setTotal] = useState(100);
-
     return (
         <Fragment>
             <div className="geeks"></div>
             <div className="header">
                 <a className="tittle colorGradient" href='/'>Fantom Chess</a>
+                <a style={{ marginLeft: 'auto' }} href='/hall-of-fame' className='button'>Hall of Fame</a>
                 <a style={{ marginLeft: 'auto' }} href='/' className='button'>Mint a Chess</a>
             </div>
 
