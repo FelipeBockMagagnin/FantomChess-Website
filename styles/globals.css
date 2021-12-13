@@ -178,6 +178,11 @@ a {
 
   .mobile-flex {
     flex-direction: column;
+    width: 100%;
+  }
+
+  .mobile-flex div {
+    width: 100% !important;
   }
 }
 
