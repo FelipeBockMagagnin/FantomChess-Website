@@ -44,6 +44,7 @@ function Index() {
             <div className="geeks"></div>
             <div className="header">
                 <a className="tittle colorGradient" href='/'>Fantom Chess</a>
+                <a href='/tournaments' style={{color: 'blue', textDecoration: 'underline', marginLeft: 'auto'}}>🏆Tournaments🏆</a>
                 <a style={{ marginLeft: 'auto' }} href='/' className='button'>Mint a Chess</a>
             </div>
 
