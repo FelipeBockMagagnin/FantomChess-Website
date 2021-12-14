@@ -1,7 +1,6 @@
 import React from 'react'
 
-
-export default function Header({ wallet, isReady, address }) {
+export default function Header({ wallet, isReady, address, staticPage }) {
     return (
         <div className="header">
             <a className="tittle colorGradient" href='/'>Fantom Chess</a>
@@ -25,25 +24,24 @@ export default function Header({ wallet, isReady, address }) {
                         </li>
 
                         <li>
-                            <a href="#">🏆Tournaments🏆</a>
+                            <a href="/roadmap">Roadmap</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Tournaments</a>
                             <ul class="dropdown">
                                 <li><a href="/tournaments">Sign Up</a></li>
                                 <li><a href="/hall-of-fame">Hall of Fame</a></li>
                             </ul>
                         </li>
-
-                        <li>
-                            <a href="/roadmap">Roadmap</a>
-                        </li>
                     </ul>
-
                 </div>
 
             </div>
 
-            <button className='button' onClick={wallet}>
+            {!staticPage && <button className='button' onClick={wallet}>
                 {isReady ? address?.substring(0, 6) + "..." + address?.substring(address.length - 4, address.length) : "Connect"} { }
-            </button>
+            </button> }
         </div>
     )
 }
