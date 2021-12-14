@@ -9,38 +9,111 @@ function Index() {
 
             <div id="app" style={{ height: '100vh' }}>
                 <div style={{ backgroundColor: 'white', padding: 20, borderTopLeftRadius: 10, borderTopRightRadius: 10 }}>
-                    <h1 className='colorGradient'>6º Fantom Chess Tournament</h1>
+                    <h1 className='colorGradient'>Roadmap</h1>
                 </div>
+
                 <div className="form-container" style={{ width: '82vw', maxHeight: '70vh', overflowY: 'scroll' }}>
                     <div className='mobile-flex' style={{ display: "flex", alignItems: 'flex-end' }}>
-                        <div style={{ flex: 1 }}>
-                            <h3 style={{margin: 0}} className='colorGradient'>1º Place</h3>
-                            <h4 style={{marginBottom: 0}}>♟RARE Fantom Chess NFT game</h4>
-                            <h5 style={{margin: 0}}>(Serper vs I Nikolaidis, 1993)</h5>
+                        <div style={{ flex: 1, marginTop: "auto", marginBottom: 'auto' }}>
+                            <h3 style={{margin: 0}} className='colorGradient'>Fantom Chess</h3>
+                            <p>A collection of 555 random generated chess games</p>  
                         </div>
 
-                        <div style={{ flex: 1 }}>
-                            <h3 className='colorGradient'>2º Place</h3>
-                            <h4>♟Fantom Chess NFT game</h4>
-                        </div>
-
-                        <div style={{ flex: 1 }}>
-                            <h3 className='colorGradient'>3º Place</h3>
-                            <h4>♟Fantom Chess NFT game</h4>
+                        <div style={{ flex: 1, textAlign: "left", marginLeft: 30 }}>
+                            <p>✅Launch Fantom Chess collection</p>
+                            <p>✅Analyze and view your Fantom Chess games</p>
+                            <p>✅Display rarity score and ranking</p>   
+                            <p>✅List on PaintSwap</p>
+                            <p>✅List on NFTKEY</p>
+                            <p>🟦Sellout collection (91% minted)</p>
+                            <p>🟦Tool to list all Fantom Chess games (after mint)</p>
                         </div>
                     </div>
+
+                    <hr></hr>
 
                     <br></br>
                     <br></br>
                     
-                    <div style={{ flex: 1 }}>
-                        <h3 className='colorGradient'>Drops</h3>
-                        <h4>2 random players will get a Fantom Chess game</h4>
+                    <div className='mobile-flex' style={{ display: "flex", alignItems: 'flex-end' }}>
+                        <div style={{ flex: 1, marginTop: "auto", marginBottom: 'auto' }}>
+                            <h3 style={{margin: 0}} className='colorGradient'>Fantom Chess Pieces</h3>
+                            <p>A FREE NFT collection just for holders, every holder will get one per Fantom Chess in wallet (1:1)</p>  
+                        </div>
+
+                        <div style={{ flex: 1, textAlign: "left", marginLeft: 30 }}>
+                            <p>🟦Announce Snapshop and Release dates</p>
+                            <p>🟦Create Snapshot</p>
+                            <p>🟦Airdrop</p>
+                            <p>🟦Rarity score and ranking</p>
+                            <p>🟦List on PaintSwap</p>
+                            <p>🟦List on NFTKEY</p>
+                        </div>
                     </div>
+
+                    <hr></hr>
 
                     <br></br>
                     <br></br>
-                    <a style={{ marginLeft: 'auto', marginRight: 'auto' }} href='https://lichess.org/tournament/35BpVuFz' className='button'>Sign up for FREE</a>
+
+
+                    <div className='mobile-flex' style={{ display: "flex", alignItems: 'flex-end' }}>
+                        <div style={{ flex: 1, marginTop: "auto", marginBottom: 'auto' }}>
+                            <h3 style={{margin: 0}} className='colorGradient'>$CHESS token</h3>
+                            <p>ERC20 Token, give back to the community a share of everything Fantom Chess earns :)</p>  
+                        </div>
+
+                        <div style={{ flex: 1, textAlign: "left", marginLeft: 30 }}>
+                            <p>🟦Create Token</p>
+                            <p>🟦Add liquidity (2º sales royalty fees)</p>
+                            <p>🟦Airdrop to Fantom Chess/Pieces holders</p>
+                            <p>🟦Implement new ways to increase token liquidity (50% of Fantom Chess 3D minting)</p>
+                            <p>🟦Create new ways to use the token</p>
+                        </div>
+                    </div>
+
+                    <hr></hr>
+
+                    <br></br>
+                    <br></br>
+
+                    <div className='mobile-flex' style={{ display: "flex", alignItems: 'flex-end' }}>
+                        <div style={{ flex: 1, marginTop: "auto", marginBottom: 'auto' }}>
+                            <h3 style={{margin: 0}} className='colorGradient'>Fantom Chess 3D</h3>
+                            <p>A NFT collection of random generated chess games in a 3D world, 50% of minting burned as $CHESS</p>  
+                        </div>
+
+                        <div style={{ flex: 1, textAlign: "left", marginLeft: 30 }}>
+                            <p>🟦Announce Collection</p>
+                            <p>🟦Start minting</p>
+                            <p>🟦Analyze and view your Fantom Chess games in 3D \o/</p>
+                            <p>🟦Display rarity score and ranking</p>   
+                            <p>🟦List on PaintSwap</p>
+                            <p>🟦List on NFTKEY</p>
+                            <p>🟦Sellout collection</p>
+                        </div>
+                    </div>
+
+                    <hr></hr>
+
+                    <br></br>
+                    <br></br>
+
+                    <h3 style={{margin: 0}} className='colorGradient'>More soon</h3>
+                    <br></br>
+                    <h3 style={{margin: 0}} className='colorGradient'>.</h3>
+                    <br></br>
+                    <h3 style={{margin: 0}} className='colorGradient'>.</h3>
+                    <br></br>
+                    <h3 style={{margin: 0}} className='colorGradient'>.</h3>
+                    <br></br>
+                    <h3 style={{margin: 0}} className='colorGradient'>.</h3>
+                    <br></br>
+                    <h3 style={{margin: 0}} className='colorGradient'>.</h3>
+                    <br></br>
+                    <h3 style={{margin: 0}} className='colorGradient'>.</h3>
+                    <br></br>
+                    <br></br>
                 </div>
             </div>
         </Fragment>

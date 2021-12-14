@@ -20,6 +20,7 @@ export default function Header({ wallet, isReady, address, staticPage }) {
                             <a href="#">Fantom Chess Pieces</a>
                             <ul class="dropdown">
                                 <li><a href="/">About (soon)</a></li>
+                                <li><a href="/">My Pieces (soon)</a></li>
                             </ul>
                         </li>
 

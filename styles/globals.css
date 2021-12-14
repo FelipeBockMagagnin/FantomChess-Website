@@ -221,6 +221,10 @@ ul li ul li a {
   transition: all 0.5s ease;
 }
 
+.done {
+  text-decoration: line-through;
+}
+
 @media (max-width: 600px) {
   div.primary-navigation ul li ul li a:hover {
     padding-left: 10px;
@@ -291,7 +295,5 @@ ul li ul li a {
 
   #app {
     height: 135vh;
-  }
-
-  
+  }  
 }
