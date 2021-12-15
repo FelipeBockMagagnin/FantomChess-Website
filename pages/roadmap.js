@@ -42,9 +42,9 @@ function Index() {
                         </div>
 
                         <div style={{ flex: 1, textAlign: "left", marginLeft: 30 }}>
-                            <p>🟦Announce Snapshop and Release dates</p>
-                            <p>🟦Create Snapshot</p>
-                            <p>🟦Airdrop</p>
+                            <p>✅Announce Snapshop and Release dates</p>
+                            <p>🟦24/12/2021 Create Snapshot</p>
+                            <p>🟦31/12/2021 Airdrop</p>
                             <p>🟦Rarity score and ranking</p>
                             <p>🟦List on PaintSwap</p>
                             <p>🟦List on NFTKEY</p>
