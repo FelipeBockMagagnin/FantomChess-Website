@@ -38,6 +38,13 @@ function Index() {
             ],
             link: 'https://lichess.org/tournament/nSG5Z8aV'
         },
+        {
+            name: '6º Fantom Chess tournament',
+            winners: [
+                "Chilloutzone", "Lelzky", "cheuk123154"
+            ],
+            link: 'https://lichess.org/tournament/35BpVuFz'
+        },
     ];
 
     return (
