@@ -218,11 +218,7 @@ function Index() {
           <br/>
           
           {isReady && <div> Minted {supply}/{maxMintable}</div>}
-
-          {isReady && <button className='button' style={{marginLeft: 'auto', marginRight: 'auto', marginTop: 20}} onClick={handleClaim}>
-            { isClaiming ? 'loading...' : 'Claim (20 FTM)' }
-          </button>}
-
+          
           {!isReady && <div className='colorGradient'><br></br>Connect your wallet to claim</div>}
         </div>
       </div>
