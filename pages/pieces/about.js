@@ -19,7 +19,7 @@ function Index() {
     <Fragment>
       <div className="geeks"></div>
       
-      <Header isReady={isReady}  />
+      <Header isReady={isReady} staticPage={true} />
 
       <div id="app">
         <div className="form-container">
