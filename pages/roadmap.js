@@ -25,7 +25,7 @@ function Index() {
                             <p>✅Display rarity score and ranking</p>   
                             <p>✅List on PaintSwap</p>
                             <p>✅List on NFTKEY</p>
-                            <p>🟦Sellout collection (91% minted)</p>
+                            <p>✅Sellout collection</p>
                             <p>🟦Tool to list all Fantom Chess games (after mint)</p>
                         </div>
                     </div>
@@ -43,8 +43,8 @@ function Index() {
 
                         <div style={{ flex: 1, textAlign: "left", marginLeft: 30 }}>
                             <p>✅Announce Snapshop and Release dates</p>
-                            <p>🟦24/12/2021 Create Snapshot</p>
-                            <p>🟦31/12/2021 Airdrop</p>
+                            <p>✅02/01/2022 Create Snapshot</p>
+                            <p>✅04/01/2022 Airdrop</p>
                             <p>🟦Rarity score and ranking</p>
                             <p>🟦List on PaintSwap</p>
                             <p>🟦List on NFTKEY</p>
