@@ -19,8 +19,8 @@ export default function Header({ wallet, isReady, address, staticPage }) {
                         <li>
                             <a href="#">Fantom Chess Pieces</a>
                             <ul class="dropdown">
-                                <li><a href="/">About (soon)</a></li>
-                                <li><a href="/">My Pieces (soon)</a></li>
+                                <li><a href="/pieces/about">About</a></li>
+                                <li><a href="/pieces/view">My Pieces</a></li>
                             </ul>
                         </li>
 
