@@ -167,7 +167,7 @@ function Index() {
               <Image src='/assets/game4.gif' alt='chess game' className='disable-on-600' width='150' height='150' />
             </div>
 
-            <div style={{ flex: 2 }}>
+            <div style={{ flex: 1 }}>
               <h2 className="colorGradient">Fantom Chess</h2>
               <br />
               <br />
