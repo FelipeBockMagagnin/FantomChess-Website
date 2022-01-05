@@ -11,7 +11,7 @@ function Index() {
     const [loading, setLoading] = useState(false);
 
     let abi = abiObj;
-    let contractAddress = "0xff6416ca607b7213d70a681f96ca20f5586cfa06";
+    let contractAddress = "0x60a19c72f967f6b3a2540cfbd1f5da5f14ec5913";
     let jsonAddress = 'https://dweb.link/ipfs/QmVm71Q8U68M4iSoFvCLRLsQL3CRjEJgNUeePEddG5TWip/';
 
     useEffect(() => {
