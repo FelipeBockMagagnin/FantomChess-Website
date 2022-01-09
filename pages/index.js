@@ -221,8 +221,8 @@ function Index() {
           {isReady && <div> Minted {supply}/{maxMintable}</div>} (sold out)
           
           <div style={{display: 'flex', justifyContent: 'center', marginTop: 20}}>
-          <a className='button' style={{marginRight: 10}} href="https://paintswap.finance/marketplace/collections/0x46350eda48b3aafc4c403ff02c024e76ae22e803" target='_blank'> Paint Swap</a>
-          <a className='button' href="https://nftkey.app/collections/fantomchess/" target='_blank'>NFTKEY</a>
+            <a className='button' style={{marginRight: 10}} href="https://paintswap.finance/marketplace/collections/0x46350eda48b3aafc4c403ff02c024e76ae22e803" target='_blank'> Paint Swap</a>
+            <a className='button' href="https://nftkey.app/collections/fantomchess/" target='_blank'>NFTKEY</a>
           </div>
           
 

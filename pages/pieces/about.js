@@ -24,20 +24,25 @@ function Index() {
       <div id="app">
         <div className="form-container">
           <div className='content-container'>
-            <div style={{ flex: 1 }} className='image-frame'>
+            <div style={{ flex: 1, minHeight: 300 }} className='image-frame' >
               <Image src='/assets/pieces.png' alt='chess game' width='440' height='440' />
             </div>
 
-            <div style={{ flex: 2 }}>
-              <h2 className="colorGradient">Fantom Chess Pieces</h2>
+            <div style={{ flex: 1 }}>
+              <h2 className="colorGradient">Fantom Chess
+              <br/> Pieces</h2>
               <br />
               <br />
 
               A <div className='colorGradient'>FREE</div> NFT collection just for holders, every holder got one per Fantom Chess in wallet (1:1) 
-              
             
               <br />
               <br />
+
+              <div style={{display: 'flex', justifyContent: 'center', marginTop: 20}}>
+                <a className='button' style={{marginRight: 10, marginRight: 10, fontSize: 10, padding: 0, width: 120}} href="https://paintswap.finance/marketplace/collections/0x60a19c72f967f6b3a2540cfbd1f5da5f14ec5913" target='_blank'>Paint Swap</a>
+                <a className='button' style={{marginRight: 10, fontSize: 10, padding: 0, width: 120}} href="https://nftkey.app/collections/fantomchesspieces/" target='_blank'>NFTKEY</a>
+              </div>
 
               {/* <a href='https://discord.gg/cDh6gbn59A' className='mr-10' target='_blank'>
                 <Image src='/assets/discord.svg' alt='discord' width='20' height='20' />
