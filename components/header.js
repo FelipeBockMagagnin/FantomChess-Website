@@ -13,6 +13,7 @@ export default function Header({ wallet, isReady, address, staticPage }) {
                             <ul class="dropdown">
                                 <li><a href="/">About/Mint</a></li>
                                 <li><a href="/view">My Games</a></li>
+                                <li><a href="/rarity">Rarity</a></li>
                             </ul>
                         </li>
 

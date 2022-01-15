@@ -297,3 +297,38 @@ ul li ul li a {
     height: 135vh;
   }  
 }
+
+#paginate ul li {
+  display: inline;
+}
+
+#paginate ul li a {
+  border-radius: 7px;
+  padding: 10px !important;
+  cursor: pointer;
+  margin-left: 5px;
+  padding: 5px;
+  background-color: blue;
+  color: white;
+}
+
+#paginate ul li.previous a,
+#paginate ul li.next a,
+#paginate ul li.break a {
+  border-color: transparent;
+  display: inline;
+}
+
+#paginate ul li.selected a {
+  background-color: red;
+  border-color: transparent;
+  color: white;
+  min-width: 32px;
+}
+#paginate ul li.disabled a {
+  color: grey;
+}
+#paginate ul li.disable,
+#paginate ul li.disabled a {
+  cursor: default;
+}

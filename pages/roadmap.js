@@ -67,7 +67,7 @@ function Index() {
                             <p>🟦Create Token</p>
                             <p>🟦Add liquidity (2º sales royalty fees)</p>
                             <p>🟦Airdrop to Fantom Chess/Pieces holders</p>
-                            <p>🟦Implement new ways to increase token liquidity (50% of Fantom Chess 3D minting)</p>
+                            <p>🟦Implement new ways to increase token liquidity (30% of Fantom Chess 3D minting)</p>
                             <p>🟦Create new ways to use the token</p>
                         </div>
                     </div>
@@ -80,7 +80,7 @@ function Index() {
                     <div className='mobile-flex' style={{ display: "flex", alignItems: 'flex-end' }}>
                         <div style={{ flex: 1, marginTop: "auto", marginBottom: 'auto' }}>
                             <h3 style={{margin: 0}} className='colorGradient'>Fantom Chess 3D</h3>
-                            <p>A NFT collection of random generated chess games in a 3D world, 50% of minting burned as $CHESS</p>  
+                            <p>A NFT collection of random generated chess games in a 3D world, 30% of minting burned as $CHESS</p>  
                         </div>
 
                         <div style={{ flex: 1, textAlign: "left", marginLeft: 30 }}>

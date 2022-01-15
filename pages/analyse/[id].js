@@ -2,9 +2,9 @@ import { useRouter } from 'next/router'
 import React, { useState, useEffect, Fragment } from "react";
 let Web3 = require("web3");
 import axios from "axios";
+import Header from '../../components/header';
 
 export default function analyse() {
-
     const router = useRouter()
     const id = router.query.id
 
@@ -550,8 +550,6 @@ export default function analyse() {
     useEffect(() => {
         if (!router.isReady) return;
 
-
-
         connectWallet();
     }, [router.isReady]);
 
@@ -602,13 +600,7 @@ export default function analyse() {
     return (
         <Fragment>
             <div className="geeks"></div>
-            <div className="header">
-                <a className="tittle colorGradient" href='/'>Fantom Chess</a>
-
-                <button className='button' onClick={connectWallet}>
-                    {isReady ? address?.substring(0, 6) + "..." + address?.substring(address.length - 4, address.length) : "Connect"} { }
-                </button>
-            </div>
+            <Header staticPage={true}/>
 
             <div id='app'>
                 <div style={{ backgroundColor: 'white', padding: 10, borderTopLeftRadius: 10, borderTopRightRadius: 10 }}>
