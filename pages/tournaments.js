@@ -34,7 +34,7 @@ function Index() {
 
                             <div style={{ flex: 1 }}>
                                 <h3 className='colorGradient'>Drops</h3>
-                                <h4>1 random player will get a <br/>Fantom Chess game during the event (must play at least 1 game)</h4>
+                                <h4>1 random player will get a <br/>Fantom Chess game during the event <br/>(must play at least 1 game)</h4>
                             </div>
 
                             <br></br>
