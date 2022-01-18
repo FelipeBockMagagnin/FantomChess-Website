@@ -1,25 +1,13 @@
-import React, { useState, useEffect, Fragment } from "react";
-let Web3 = require("web3");
+import React, { Fragment } from 'react'
 import Image from 'next/image'
-import Swal from 'sweetalert2'
-import Header from "../../components/header";
+import Header from '../../components/header'
 
-function Index() {
-  const [web3, setWeb3] = useState(null);
-  const [address, setAddress] = useState(null);
-  const [contract, setContract] = useState(null);
-  const [balance, setBalance] = useState(0);
-  const [maxMintable, setMaxMintable] = useState(0);
-  const [supply, setSupply] = useState(0);
-  const [isClaiming, setIsClaiming] = useState(false);
-  const [isReady, setIsReady] = useState(false);
-
-
+function Index () {
   return (
     <Fragment>
       <div className="geeks"></div>
-      
-      <Header isReady={isReady} staticPage={true} />
+
+      <Header staticPage={true} />
 
       <div id="app">
         <div className="form-container">
@@ -34,14 +22,14 @@ function Index() {
               <br />
               <br />
 
-              A <div className='colorGradient'>FREE</div> NFT collection just for holders, every holder got one per Fantom Chess in wallet (1:1) 
-            
+              A <div className='colorGradient'>FREE</div> NFT collection just for holders, every holder got one per Fantom Chess in wallet (1:1)
+
               <br />
               <br />
 
-              <div style={{display: 'flex', justifyContent: 'center', marginTop: 20}}>
-                <a className='button' style={{marginRight: 10, marginRight: 10, fontSize: 10, padding: 0, width: 120}} href="https://paintswap.finance/marketplace/collections/0x60a19c72f967f6b3a2540cfbd1f5da5f14ec5913" target='_blank'>Paint Swap</a>
-                <a className='button' style={{marginRight: 10, fontSize: 10, padding: 0, width: 120}} href="https://nftkey.app/collections/fantomchesspieces/" target='_blank'>NFTKEY</a>
+              <div style={{ display: 'flex', justifyContent: 'center', marginTop: 20 }}>
+                <a className='button' style={{ marginRight: 10, fontSize: 10, padding: 0, width: 120 }} href="https://paintswap.finance/marketplace/collections/0x60a19c72f967f6b3a2540cfbd1f5da5f14ec5913" target='_blank' rel="noreferrer">Paint Swap</a>
+                <a className='button' style={{ marginRight: 10, fontSize: 10, padding: 0, width: 120 }} href="https://nftkey.app/collections/fantomchesspieces/" target='_blank' rel="noreferrer">NFTKEY</a>
               </div>
 
               {/* <a href='https://discord.gg/cDh6gbn59A' className='mr-10' target='_blank'>
@@ -67,9 +55,9 @@ function Index() {
           </div>
 
           <br/>
-          
+
           {/* {isReady && <div> Minted {supply}/{maxMintable}</div>} (sold out)
-          
+
           <div style={{display: 'flex', justifyContent: 'center', marginTop: 20}}>
             <a className='button' style={{marginRight: 10}} href="https://paintswap.finance/marketplace/collections/0x46350eda48b3aafc4c403ff02c024e76ae22e803" target='_blank'> Paint Swap</a>
             <a className='button' href="https://nftkey.app/collections/fantomchess/" target='_blank'>NFTKEY</a>
@@ -77,7 +65,7 @@ function Index() {
         </div>
       </div>
     </Fragment>
-  );
+  )
 }
 
-export default Index;
+export default Index

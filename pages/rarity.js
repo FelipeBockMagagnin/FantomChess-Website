@@ -20,18 +20,17 @@ function Index () {
   useEffect(() => {
     const endOffset = itemOffset + itemsPerPage
     console.log(`Loading items from ${itemOffset} to ${endOffset}`)
-    setCurrentItems(rarity.slice(itemOffset, endOffset));
+    setCurrentItems(rarity.slice(itemOffset, endOffset))
     setGames(rarity.slice(itemOffset, itemOffset + itemsPerPage))
     setPageCount(Math.ceil(rarity.length / itemsPerPage))
   }, [itemOffset, itemsPerPage])
 
   const handlePageClick = (event) => {
-    const newOffset = (event.selected * itemsPerPage) % rarity.length;
+    const newOffset = (event.selected * itemsPerPage) % rarity.length
     console.log(
       `User requested page number ${event.selected}, which is offset ${newOffset}`
     )
-    setItemOffset(newOffset);
-
+    setItemOffset(newOffset)
   }
 
   function Item (game) {

@@ -603,15 +603,45 @@ export default function analyse() {
             <Header staticPage={true}/>
 
             <div id='app'>
-                <div style={{ backgroundColor: 'white', padding: 10, borderTopLeftRadius: 10, borderTopRightRadius: 10 }}>
+                <div style={{ backgroundColor: 'white', padding: 10, borderTopLeftRadius: 10, borderTopRightRadius: 10, marginTop: 100 }}>
                     Fantom Chess #{id}
                 </div>
-                <div className="form-container" style={{ width: 'auto', height: 'auto', display: 'flex', justifyContent: 'center', marginBottom: 50 }}>
+                <div className="form-container" style={{ width: 'auto', height: 'auto', display: 'flex', justifyContent: 'center', marginBottom: 50,  }}>
                     <div>
                         <div id='board' ></div>
                     </div>
                 </div>
+
+                <div id='info-analyze' style={{textAlign: 'center', backgroundColor: 'white', padding: 10, width: '80%', borderRadius: 20, marginBottom: 50}}>
+                    <span class="colorGradient">Infos</span>
+
+                    <br/>
+                    <br/>
+
+                    <span class="colorGradient">Moves:</span> {data?.attributes[0].value}
+
+                    <br/>
+
+                    <span class="colorGradient">Sound:</span> {data?.attributes[2].value}
+
+                    <br/>
+
+                    <span class="colorGradient">Championship Match:</span> {data?.attributes[3].value}
+
+                    <br/>
+
+                    <span class="colorGradient">Result:</span> {data?.attributes[4].value}
+
+                    <br/>
+
+                    <div style={{ display: 'flex', justifyContent: 'center', marginTop: 20 }}>
+                <a className='button' style={{ marginRight: 10, fontSize: 10, padding: 0, width: 120 }} href={"https://paintswap.finance/marketplace/assets/0x46350eda48b3aafc4c403ff02c024e76ae22e803/" + id} target='_blank' rel="noreferrer">Paint Swap</a>
+                <a className='button' style={{ marginRight: 10, fontSize: 10, padding: 0, width: 120 }} href={"https://nftkey.app/collections/fantomchess/token-details/?tokenId=" + id} target='_blank' rel="noreferrer">NFTKEY</a>
+              </div>
+                </div>
             </div>
+
+            
         </Fragment>
     )
 }
