@@ -26,7 +26,7 @@ function Index () {
                             <p>✅List on PaintSwap</p>
                             <p>✅List on NFTKEY</p>
                             <p>✅Sellout collection</p>
-                            <p>🟦Tool to list all Fantom Chess games (after mint)</p>
+                            <p>✅Tool to list all Fantom Chess games (after mint)</p>
                         </div>
                     </div>
 
