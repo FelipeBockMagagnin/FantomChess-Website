@@ -232,6 +232,10 @@ ul li ul li a {
     transition: all 0.3s ease;
   }
 
+  .filters{
+    flex-direction: column;
+  }
+
   div.primary-navigation ul li {
     list-style: none;
     margin: 0;

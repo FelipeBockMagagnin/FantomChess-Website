@@ -122,7 +122,7 @@ function Index () {
 
       <div id="app" style={{ height: '100vh' }}>
         <div className="form-container" style={{ width: '82vw', maxHeight: '70vh', overflowY: 'scroll' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
+          <div className='filters' style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
             <div>
               <h3 className='colorGradient'>Filters</h3>
             </div>
