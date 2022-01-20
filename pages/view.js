@@ -51,7 +51,7 @@ function Index() {
           .catch((err) => console.log(err));
 
         setLoading(true);
-        axios.get('https://api.paintswap.finance/userNFTs/' + accounts[0],
+        axios.get('https://api.paintswap.finance/v2/userNFTs?user=' + accounts[0],
           {
             params: {
               allowNSFW: true,
