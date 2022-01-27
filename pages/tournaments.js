@@ -9,7 +9,7 @@ function Index () {
 
             <div id="app" style={{ overflowY: 'auto' }}>
                 <div style={{ backgroundColor: 'white', padding: 20, borderTopLeftRadius: 10, borderTopRightRadius: 10, width: '70vw', fontSize: 12 }}>
-                    <h1 className='colorGradient'>2º Fantom Chess Tournament</h1>
+                    <h1 className='colorGradient'>3º Fantom Chess Tournament</h1>
                 </div>
                 <div className="form-container" style={{ width: '82vw', maxHeight: '70vh', overflowY: 'scroll', marginTop: 0 }}>
                     <div className='mobile-flex' style={{ display: 'flex', alignItems: 'flex-end' }}>
@@ -40,7 +40,7 @@ function Index () {
                     <br></br>
                     <br></br>
 
-                    <a style={{ marginLeft: 'auto', marginRight: 'auto', width: 250 }} href='https://lichess.org/tournament/do3rs0xT' target="_blank" className='button' rel="noreferrer">Sign up for FREE</a>
+                    <a style={{ marginLeft: 'auto', marginRight: 'auto', width: 250 }} href='https://lichess.org/tournament/jrPMhmDu' target="_blank" className='button' rel="noreferrer">Sign up for FREE</a>
                 </div>
             </div>
         </Fragment>
