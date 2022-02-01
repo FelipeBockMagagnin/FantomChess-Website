@@ -10,6 +10,8 @@ function Index () {
   const [rarityFilter, setRarityFilter] = useState(null)
   const [resultRarityFilter, setResultRarityFilter] = useState(null)
 
+  const [numberFilter, setnumberFilter] = useState(null)
+
   // pagination
   // We start with an empty list of items.
   const [currentItems, setCurrentItems] = useState(null)
@@ -26,6 +28,10 @@ function Index () {
     console.log(`Loading items from ${itemOffset} to ${endOffset}`)
 
     let items = rarity
+
+    if (numberFilter) {
+      items = items.filter(x => x.id == numberFilter)
+    }
 
     if (rarityFilter) {
       if (rarityFilter === 'commom') {
@@ -48,7 +54,7 @@ function Index () {
     setCurrentItems(items.slice(itemOffset, endOffset))
     setGames(items.slice(itemOffset, itemOffset + itemsPerPage))
     setPageCount(Math.ceil(items.length / itemsPerPage))
-  }, [itemOffset, itemsPerPage, rarityFilter, soundRarityFilter, resultRarityFilter])
+  }, [itemOffset, itemsPerPage, rarityFilter, soundRarityFilter, resultRarityFilter, numberFilter])
 
   const handlePageClick = (event) => {
     const newOffset = (event.selected * itemsPerPage) % rarity.length
@@ -127,6 +133,10 @@ function Index () {
               <h3 className='colorGradient'>Filters</h3>
             </div>
 
+            <div >
+              <input type='number' placeholder='#number' value={numberFilter} onChange={(e) => { setnumberFilter(e.target.value) }}/>
+            </div>
+
             <div>
               <div className="dropdown">
                 <button className="dropbtn">Winner  <br/> <span style={{ fontSize: 14 }}>{resultRarityFilter}</span></button>
@@ -176,11 +186,11 @@ function Index () {
 
           <div style={{ display: 'flex', flexWrap: 'wrap', flexDirection: 'row' }}>
 
-            {games.length === 0 && <div style={{textAlign: 'center', width: '100%', marginTop: 30}}>No games</div> }
+            {games.length === 0 && <div style={{ textAlign: 'center', width: '100%', marginTop: 30 }}>No games</div> }
 
-            {games.map((game) => <Item key={game.id} game={game} />)}
-
-            <div id="paginate">
+            {games.map((game) => <Item key={game.id} game={game} />)}  
+          </div>
+          <div id="paginate">
               <ReactPaginate
                 breakLabel="..."
                 nextLabel="next >"
@@ -191,7 +201,6 @@ function Index () {
                 renderOnZeroPageCount={null}
               />
             </div>
-          </div>
 
           <br />
         </div>
