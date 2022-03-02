@@ -15,7 +15,7 @@ function Index () {
                     <div className='mobile-flex' style={{ display: 'flex', alignItems: 'flex-end' }}>
                         <div style={{ flex: 1 }}>
                             <h3 style={{ margin: 0 }} className='colorGradient'>1º Place</h3>
-                            <h4 style={{ marginBottom: 0 }}>Fantom Chess game</h4>
+                            <h4 style={{ marginBottom: 0 }}>Fantom Chess 3D #???</h4>
                         </div>
 
                         <div style={{ flex: 1 }}>
@@ -40,7 +40,7 @@ function Index () {
                     <br></br>
                     <br></br>
 
-                    <a style={{ marginLeft: 'auto', marginRight: 'auto', width: 250 }} href='https://lichess.org/tournament/8ZAevZEa' target="_blank" className='button' rel="noreferrer">Sign up for FREE</a>
+                    <a style={{ marginLeft: 'auto', marginRight: 'auto', width: 250 }} href='https://lichess.org/tournament/AeqCIq9F' target="_blank" className='button' rel="noreferrer">Sign up for FREE</a>
                 </div>
             </div>
         </Fragment>
