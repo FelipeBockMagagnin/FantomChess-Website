@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from 'react'
+import React, { Fragment } from 'react'
 import Header from '../components/header'
 
 function Index () {
@@ -9,13 +9,13 @@ function Index () {
 
             <div id="app" style={{ overflowY: 'auto' }}>
                 <div style={{ backgroundColor: 'white', padding: 20, borderTopLeftRadius: 10, borderTopRightRadius: 10, width: '70vw', fontSize: 12 }}>
-                    <h1 className='colorGradient'>4º Fantom Chess Tournament</h1>
+                    <h1 className='colorGradient'>5º Fantom Chess Tournament</h1>
                 </div>
                 <div className="form-container" style={{ width: '82vw', maxHeight: '70vh', overflowY: 'scroll', marginTop: 0 }}>
                     <div className='mobile-flex' style={{ display: 'flex', alignItems: 'flex-end' }}>
                         <div style={{ flex: 1 }}>
-                            <h3 style={{ margin: 0 }} className='colorGradient'>1º Place</h3>
-                            <h4 style={{ marginBottom: 0 }}>Fantom Chess 3D #???</h4>
+                            <h3 className='colorGradient'>1º Place</h3>
+                            <h4>Fantom Chess 3D #???</h4>
                         </div>
 
                         <div style={{ flex: 1 }}>
