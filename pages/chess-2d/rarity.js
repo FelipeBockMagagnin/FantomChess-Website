@@ -1,7 +1,7 @@
 import React, { useState, useEffect, Fragment } from 'react'
 import ReactPaginate from 'react-paginate'
-import rarity from '../src/utils/chessRarity.json'
-import Header from '../components/header'
+import rarity from '../../src/utils/chessRarity.json'
+import Header from '../../components/header'
 
 function Index () {
   const [games, setGames] = useState([])

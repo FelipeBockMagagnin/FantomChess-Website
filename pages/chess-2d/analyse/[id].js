@@ -2,7 +2,7 @@ import { useRouter } from 'next/router'
 import React, { useState, useEffect, Fragment } from "react";
 let Web3 = require("web3");
 import axios from "axios";
-import Header from '../../components/header';
+import Header from '../../../components/header';
 
 export default function analyse() {
     const router = useRouter()
@@ -603,10 +603,10 @@ export default function analyse() {
             <Header staticPage={true}/>
 
             <div id='app'>
-                <div style={{ backgroundColor: 'white', padding: 10, borderTopLeftRadius: 10, borderTopRightRadius: 10, marginTop: 100 }}>
+                <div style={{ backgroundColor: 'white', padding: 10, borderTopLeftRadius: 10, borderTopRightRadius: 10, marginTop: 20 }}>
                     Fantom Chess #{id}
                 </div>
-                <div className="form-container" style={{ width: 'auto', height: 'auto', display: 'flex', justifyContent: 'center', marginBottom: 50,  }}>
+                <div className="form-container" style={{ width: 'auto', height: 'auto', display: 'flex', justifyContent: 'center', marginBottom: 50, marginTop: 0  }}>
                     <div>
                         <div id='board' ></div>
                     </div>

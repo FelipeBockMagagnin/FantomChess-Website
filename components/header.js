@@ -11,9 +11,9 @@ export default function Header({ wallet, isReady, address, staticPage }) {
                         <li>
                             <a href="#">Fantom Chess</a>
                             <ul class="dropdown">
-                                <li><a href="/">About/Mint</a></li>
-                                <li><a href="/view">My Games</a></li>
-                                <li><a href="/rarity">Rarity</a></li>
+                                <li><a href="/chess-2d">About/Mint</a></li>
+                                <li><a href="/chess-2d/view">My Games</a></li>
+                                <li><a href="/chess-2d/rarity">Rarity</a></li>
                             </ul>
                         </li>
 

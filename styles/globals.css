@@ -39,7 +39,7 @@ a {
 .form-container {
   background-color: white;
   border-radius: 20px;
-  width: 60vw;
+  width: 55vw;
   padding: 20px;
 }
 
@@ -298,8 +298,9 @@ ul li ul li a {
   }
 
   #app {
-    height: 135vh;
+    height: 100vh;
     overflow-y: auto;
+    justify-content: flex-start;
   }  
 }
 

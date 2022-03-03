@@ -3,9 +3,8 @@ let Web3 = require("web3");
 import Image from 'next/image'
 import Swal from 'sweetalert2'
 import axios from "axios";
-import analyse from "./analyse/[id]";
-import rarity from '../src/utils/chessRarity.json';
-import abiObj from '../src/utils/abi'
+import rarity from '../../src/utils/chessRarity.json';
+import abiObj from '../../src/utils/abi'
 
 function Index() {
   const [web3, setWeb3] = useState(null);
