@@ -9,7 +9,14 @@ export default function Header({ wallet, isReady, address, staticPage }) {
                 <div class="primary-navigation">
                     <ul style={{padding: 0}}>
                         <li>
-                            <a href="#">Fantom Chess</a>
+                            <a href="#">Fantom Chess 3D</a>
+                            <ul class="dropdown">
+                                <li><a href="/">About/Mint</a></li>
+                                <li><a href="/chess-3d/view">My Games</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Fantom Chess 2D</a>
                             <ul class="dropdown">
                                 <li><a href="/chess-2d">About/Mint</a></li>
                                 <li><a href="/chess-2d/view">My Games</a></li>
