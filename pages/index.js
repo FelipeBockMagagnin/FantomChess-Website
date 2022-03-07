@@ -5,7 +5,7 @@ import Header from '../components/header'
 import abiObj from '../src/utils/abi'
 const Web3 = require('web3')
 
-function Index () {
+function Index() {
   const [web3, setWeb3] = useState(null)
   const [address, setAddress] = useState(null)
   const [contract, setContract] = useState(null)
@@ -16,13 +16,13 @@ function Index () {
   const [isReady, setIsReady] = useState(false)
 
   const abi = abiObj
-  const contractAddress = '0x46350eda48b3aafc4c403ff02c024e76ae22e803'
+  const contractAddress = '0x846a150274e252392c4b6dabe19c6d28d8ca7865'
 
   useEffect(() => {
     connectWallet()
   }, [])
 
-  function connectWallet () {
+  function connectWallet() {
     if (!window.ethereum) {
       alert('Please install MetaMask')
       setIsReady(false)
@@ -89,12 +89,12 @@ function Index () {
       })
   }
 
-  function handleClaim () {
+  function handleClaim() {
     const tx = claim()
     console.log(tx)
   }
 
-  async function loadData () {
+  async function loadData() {
     const totalSupply = await contract.methods
       .totalSupply()
       .call()
@@ -118,7 +118,7 @@ function Index () {
       .catch((err) => console.log(err))
   }
 
-  function claim () {
+  function claim() {
     setIsClaiming(true)
     const _price = web3.utils.toWei('20')
 
@@ -159,15 +159,30 @@ function Index () {
       <div id="app">
         <div className="form-container">
           <div className='content-container'>
-            <div style={{ flex: 1 }} className='image-frame'>
-              <Image src='/assets/game1.gif' alt='chess game' width='150' height='150' />
-              <Image src='/assets/game2.gif' alt='chess game' className='disable-on-400' width='150' height='150' />
-              <Image src='/assets/game3.gif' alt='chess game' className='disable-on-600' width='150' height='150' />
-              <Image src='/assets/game4.gif' alt='chess game' className='disable-on-600' width='150' height='150' />
+            <div style={{ margin: 20 }}>
+              <div style={{ flex: 1 }} className='image-frame'>
+                <video width='150' muted height='150' autoPlay={true} loop poster='/assets/0.mp4' controls>
+                  <source src='/assets/0.mp4' type="video/mp4"></source>
+                </video>
+
+                <video width='150' muted height='150' autoPlay={true} loop poster='/assets/1.mp4' controls>
+                  <source src='/assets/1.mp4' type="video/mp4"></source>
+                </video>
+              </div>
+              <div style={{ flex: 1 }} className='image-frame'>
+                <video width='150' muted height='150' autoPlay={true} loop poster='/assets/3.mp4' controls>
+                  <source src='/assets/3.mp4' type="video/mp4"></source>
+                </video>
+
+                <video width='150' muted height='150' autoPlay={true} loop poster='/assets/2.mp4' controls>
+                  <source src='/assets/2.mp4' type="video/mp4"></source>
+                </video>
+
+              </div>
             </div>
 
-            <div style={{ flex: 1 }}>
-              <h2 className="colorGradient">Fantom Chess <p className='threeD-text'>3D</p></h2>
+            <div style={{ flex: 1, marginTop: 10 }}>
+              <h2 className="colorGradient" >Fantom Chess 3D</h2>
               <br />
               <br />
 
@@ -181,7 +196,7 @@ function Index () {
               <br />
               <br />
 
-              <div className='colorGradient'>44</div> games in the collection will be based on <div className='colorGradient'>great games</div> from the history of <div className='colorGradient'>chess</div>.
+              <div className='colorGradient'>46</div> games in the collection will be based on <div className='colorGradient'>great games</div> from the history of <div className='colorGradient'>chess</div>.
 
               <br />
               <br />
@@ -201,12 +216,18 @@ function Index () {
             </div>
           </div>
 
-          <br/>
+          <br />
 
-          {isReady && <div> Minted {0}/{444}</div>}
+          {isReady && <div> Minted {supply}/{maxMintable}</div>}
+
+          {!isReady && <div className='colorGradient'><br></br>Connect your wallet to claim</div>}
+
+          {/*isReady && <button className='button' style={{ marginLeft: 'auto', marginRight: 'auto', marginTop: 20 }} onClick={handleClaim}>
+            {isClaiming ? 'loading...' : 'Claim (20 FTM)'}
+  </button>*/}
 
           <div style={{ display: 'flex', justifyContent: 'center', marginTop: 20 }}>
-            Release Date: TBA
+            Release Date: <div className='colorGradient'>TBA</div>
           </div>
 
         </div>

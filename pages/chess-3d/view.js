@@ -615,7 +615,7 @@ function Index() {
     }
   ];
 
-  let contractAddress = "0x1573b6699fcd7b89874c51c47b1d056eee9bd651";
+  let contractAddress = "0x846a150274e252392c4b6dabe19c6d28d8ca7865";
   let jsonAddress = 'https://dweb.link/ipfs/QmSYsDXEcR41aRDAEzfsXR2BuXDWeW1NqSkC5bfRz4Uo2A/';
 
   useEffect(() => {
@@ -669,7 +669,7 @@ function Index() {
     <Fragment>
       <div className="geeks"></div>
       <div className="header">
-        <a className="tittle colorGradient" href='/'>Fantom Chess</a>
+        <a className="tittle colorGradient" href='/'>Fantom Chess 3D</a>
 
         <div className='menus'>
           <div>You own ({balance}) games</div>

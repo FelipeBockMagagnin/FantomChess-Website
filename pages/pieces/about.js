@@ -12,11 +12,11 @@ function Index () {
       <div id="app">
         <div className="form-container">
           <div className='content-container'>
-            <div style={{ flex: 1, minHeight: 300 }} className='image-frame' >
+            <div style={{ flex: 1, minHeight: 450 }} className='image-frame' >
               <Image src='/assets/pieces.png' alt='chess game' width='440' height='440' />
             </div>
 
-            <div style={{ flex: 1 }}>
+            <div style={{ flex: 1, marginTop: 10 }}>
               <h2 className="colorGradient">Fantom Chess
               <br/> Pieces</h2>
               <br />

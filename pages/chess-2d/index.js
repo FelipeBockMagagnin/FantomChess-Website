@@ -5,7 +5,7 @@ import Header from '../../components/header'
 import abiObj from '../../src/utils/abi'
 const Web3 = require('web3')
 
-function Index () {
+function Index() {
   const [web3, setWeb3] = useState(null)
   const [address, setAddress] = useState(null)
   const [contract, setContract] = useState(null)
@@ -22,7 +22,7 @@ function Index () {
     connectWallet()
   }, [])
 
-  function connectWallet () {
+  function connectWallet() {
     if (!window.ethereum) {
       alert('Please install MetaMask')
       setIsReady(false)
@@ -89,12 +89,12 @@ function Index () {
       })
   }
 
-  function handleClaim () {
+  function handleClaim() {
     const tx = claim()
     console.log(tx)
   }
 
-  async function loadData () {
+  async function loadData() {
     const totalSupply = await contract.methods
       .totalSupply()
       .call()
@@ -118,7 +118,7 @@ function Index () {
       .catch((err) => console.log(err))
   }
 
-  function claim () {
+  function claim() {
     setIsClaiming(true)
     const _price = web3.utils.toWei('20')
 
@@ -159,14 +159,21 @@ function Index () {
       <div id="app">
         <div className="form-container">
           <div className='content-container'>
-            <div style={{ flex: 1 }} className='image-frame'>
-              <Image src='/assets/game1.gif' alt='chess game' width='150' height='150' />
-              <Image src='/assets/game2.gif' alt='chess game' className='disable-on-400' width='150' height='150' />
-              <Image src='/assets/game3.gif' alt='chess game' className='disable-on-600' width='150' height='150' />
-              <Image src='/assets/game4.gif' alt='chess game' className='disable-on-600' width='150' height='150' />
+            <div style={{ flex: 1 }} >
+              <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+                <div className='image-frame'>
+                  <Image src='/assets/game1.gif' alt='chess game' width='150' height='150' />
+                  <Image src='/assets/game2.gif' alt='chess game' width='150' height='150' />
+                </div>
+
+                <div className='image-frame'>
+                  <Image src='/assets/game3.gif' alt='chess game' width='150' height='150' />
+                  <Image src='/assets/game4.gif' alt='chess game' width='150' height='150' />
+                </div>
+              </div>
             </div>
 
-            <div style={{ flex: 1 }}>
+            <div style={{ flex: 1, marginTop: 10 }}>
               <h2 className="colorGradient">Fantom Chess</h2>
               <br />
               <br />
@@ -214,7 +221,7 @@ function Index () {
             </div>
           </div>
 
-          <br/>
+          <br />
 
           {isReady && <div> Minted {supply}/{maxMintable}</div>} (sold out)
 
