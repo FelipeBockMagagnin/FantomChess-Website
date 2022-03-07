@@ -224,7 +224,7 @@ function Index() {
 
           {/*isReady && <button className='button' style={{ marginLeft: 'auto', marginRight: 'auto', marginTop: 20 }} onClick={handleClaim}>
             {isClaiming ? 'loading...' : 'Claim (20 FTM)'}
-  </button>*/}
+          </button>*/}
 
           <div style={{ display: 'flex', justifyContent: 'center', marginTop: 20 }}>
             Release Date: <div className='colorGradient'>TBA</div>
