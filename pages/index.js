@@ -201,7 +201,7 @@ function Index () {
               <br />
               <br />
 
-              Price: <div className='colorGradient'>TBA</div> each
+              Price: <div className='colorGradient'>20 FTM</div> each
 
               <br />
               <br />
@@ -213,6 +213,10 @@ function Index () {
               <a href='https://twitter.com/FantomChess' target='_blank' className='mr-10' rel="noreferrer">
                 <Image src='/assets/twitter.svg' alt='twitter' width='20' height='20' />
               </a>
+
+              <a href='https://ftmscan.com/address/0x846a150274e252392c4b6dabe19c6d28d8ca7865' className='mr-10' target='_blank' rel="noreferrer">
+                <Image src='/assets/fantom.svg' alt='ftmscan' width='20' height='20' />
+              </a>
             </div>
           </div>
 
@@ -222,13 +226,9 @@ function Index () {
 
           {!isReady && <div className='colorGradient'><br></br>Connect your wallet to claim</div>}
 
-          {/*isReady && <button className='button' style={{ marginLeft: 'auto', marginRight: 'auto', marginTop: 20 }} onClick={handleClaim}>
+          {isReady && <button className='button' style={{ marginLeft: 'auto', marginRight: 'auto', marginTop: 20 }} onClick={handleClaim}>
             {isClaiming ? 'loading...' : 'Claim (20 FTM)'}
-          </button>*/}
-
-          <div style={{ display: 'flex', justifyContent: 'center', marginTop: 20 }}>
-            Release Date: <div className='colorGradient'>TBA</div>
-          </div>
+          </button>}
 
         </div>
       </div>
