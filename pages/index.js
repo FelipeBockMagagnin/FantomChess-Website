@@ -5,7 +5,7 @@ import Header from '../components/header'
 import abiObj from '../src/utils/abi'
 const Web3 = require('web3')
 
-function Index() {
+function Index () {
   const [web3, setWeb3] = useState(null)
   const [address, setAddress] = useState(null)
   const [contract, setContract] = useState(null)
@@ -22,7 +22,7 @@ function Index() {
     connectWallet()
   }, [])
 
-  function connectWallet() {
+  function connectWallet () {
     if (!window.ethereum) {
       alert('Please install MetaMask')
       setIsReady(false)
@@ -89,12 +89,12 @@ function Index() {
       })
   }
 
-  function handleClaim() {
+  function handleClaim () {
     const tx = claim()
     console.log(tx)
   }
 
-  async function loadData() {
+  async function loadData () {
     const totalSupply = await contract.methods
       .totalSupply()
       .call()
@@ -118,7 +118,7 @@ function Index() {
       .catch((err) => console.log(err))
   }
 
-  function claim() {
+  function claim () {
     setIsClaiming(true)
     const _price = web3.utils.toWei('20')
 
