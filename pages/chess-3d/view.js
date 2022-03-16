@@ -702,6 +702,7 @@ function Index() {
                   <video width='200' muted height='200' autoPlay={true} loop poster={'https://www.fantomchess.com/assets/videos/' + game.id + '.mp4'} controls>
                     <source src={'https://www.fantomchess.com/assets/videos/' + game.id + '.mp4'} type="video/mp4"></source>
                   </video>
+                  
 
                   <a className='button' href={'analyse/' + game.id} style={{ width: '50%', marginTop: 10, height: 30, marginLeft: 'auto', marginRight: 'auto' }}>Analyse</a>
                 </div>
