@@ -160,24 +160,8 @@ function Index () {
         <div className="form-container">
           <div className='content-container'>
             <div style={{ margin: 20 }}>
-              <div style={{ flex: 1 }} className='image-frame'>
-                <video width='150' muted height='150' autoPlay={true} loop poster='/assets/0.mp4' controls>
-                  <source src='/assets/0.mp4' type="video/mp4"></source>
-                </video>
-
-                <video width='150' muted height='150' autoPlay={true} loop poster='/assets/1.mp4' controls>
-                  <source src='/assets/1.mp4' type="video/mp4"></source>
-                </video>
-              </div>
-              <div style={{ flex: 1 }} className='image-frame'>
-                <video width='150' muted height='150' autoPlay={true} loop poster='/assets/3.mp4' controls>
-                  <source src='/assets/3.mp4' type="video/mp4"></source>
-                </video>
-
-                <video width='150' muted height='150' autoPlay={true} loop poster='/assets/2.mp4' controls>
-                  <source src='/assets/2.mp4' type="video/mp4"></source>
-                </video>
-
+              <div style={{ flex: 1 }} className='image-frame' style={{height: 300}}>
+                <Image src='/assets/launch.gif' alt='discord' width='300' height='300' />
               </div>
             </div>
 
