@@ -656,18 +656,17 @@ function Index() {
 
             let responses = [];
 
+            let array = [];
+
             pieces.forEach(piece => {
-              responses.push(
-                axios.get(jsonAddress + piece + '.json').then(res => res.data)
-              )
+              array.push({
+                id: piece
+              })
             });
 
-            Promise.all(responses).then(results => {
-              console.log(results)
-              setGames(results);
-            }).finally(_ => {
-              setLoading(false);
-            })
+            setGames(array);
+            setLoading(false);
+           
           })
           .catch((err) => console.log(err))
       });
