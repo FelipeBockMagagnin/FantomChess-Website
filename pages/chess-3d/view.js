@@ -641,6 +641,15 @@ function Index() {
         setLoading(true);
 
         c.methods
+          .balanceOf(accounts[0])
+          .call()
+          .then((_balance) => {
+            setBalance(_balance);
+          })
+          .catch((err) => console.log(err));
+
+          
+        c.methods
           .chessOwned(accounts[0])
           .call()
           .then((pieces) => {
