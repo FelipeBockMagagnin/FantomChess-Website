@@ -15,7 +15,7 @@ export default function analyse() {
     const [contract, setContract] = useState(null);
     const [balance, setBalance] = useState(0);
 
-    const jsonAddress = 'https://gateway.pinata.cloud/ipfs/QmSYsDXEcR41aRDAEzfsXR2BuXDWeW1NqSkC5bfRz4Uo2A/';
+    const jsonAddress = 'https://www.fantomchess.com/assets/videos/';
     const contractAddress = "0x1573b6699fcd7b89874c51c47b1d056eee9bd651";
 
     let abi = [
