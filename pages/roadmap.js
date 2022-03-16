@@ -63,8 +63,9 @@ function Index () {
                         </div>
 
                         <div style={{ flex: 1, textAlign: 'left', marginLeft: 30 }}>
-                            <p>🟦Announce Collection</p>
-                            <p>🟦Start minting</p>
+                            <p>✅Announce Collection</p>
+                            <p>✅Start minting</p>
+                            <p>✅Analyze and view your Fantom Chess games in 2D</p>
                             <p>🟦Analyze and view your Fantom Chess games in 3D \o/</p>
                             <p>🟦Display rarity score and ranking</p>
                             <p>🟦List on PaintSwap</p>
