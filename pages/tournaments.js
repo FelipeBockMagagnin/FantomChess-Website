@@ -9,7 +9,7 @@ function Index () {
 
             <div id="app" style={{ overflowY: 'auto' }}>
                 <div style={{ backgroundColor: 'white', padding: 20, marginTop: 10, borderTopLeftRadius: 10, borderTopRightRadius: 10, width: '70vw', fontSize: 12 }}>
-                    <h1 className='colorGradient'>6º Fantom Chess Tournament</h1>
+                    <h1 className='colorGradient'>7º Fantom Chess Tournament</h1>
                 </div>
                 <div className="form-container" style={{ width: '82vw', maxHeight: '70vh', overflowY: 'scroll', marginTop: 0 }}>
                     <div className='mobile-flex' style={{ display: 'flex', alignItems: 'flex-end' }}>
@@ -34,13 +34,15 @@ function Index () {
 
                     <div style={{ flex: 1 }}>
                         <h3 className='colorGradient'>Drops</h3>
-                        <h4>1 random player will get a <br />Fantom Chess game during the event <br />(must play at least 1 game)</h4>
+                        <h4>1 random player will get a <br />Fantom Chess 3D game during the event <br />(must play at least 1 game)</h4>
                     </div>
 
                     <br></br>
                     <br></br>
 
-                    <a style={{ marginLeft: 'auto', marginRight: 'auto', width: 250 }} href='https://lichess.org/tournament/ofcgfPwd' target="_blank" className='button' rel="noreferrer">Sign up for FREE</a>
+                    <a style={{ marginLeft: 'auto', marginRight: 'auto', width: 250 }} href='https://lichess.org/tournament/ewrw65Hw' target="_blank" className='button' rel="noreferrer">Sign up for FREE</a>
+                    <a style={{ marginLeft: 'auto', marginRight: 'auto', width: 250, marginTop: 10 }} href='/' className='button' rel="noreferrer">Mint 3D Chess Game</a>
+
                 </div>
             </div>
         </Fragment>
