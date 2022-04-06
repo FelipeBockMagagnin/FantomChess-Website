@@ -170,7 +170,7 @@ function Index () {
               <br />
               <br />
 
-              Fantom Chess 3D is a collection of <div className='colorGradient'>444</div> random generated Chess Games stored on the <div className='colorGradient'>Fantom</div> Blockchain.
+              Fantom Chess 3D is a collection of <div className='colorGradient'>111</div> random generated Chess Games stored on the <div className='colorGradient'>Fantom</div> Blockchain.
               <br />
               <br />
 
@@ -180,7 +180,7 @@ function Index () {
               <br />
               <br />
 
-              <div className='colorGradient'>46</div> games in the collection will be based on <div className='colorGradient'>great games</div> from the history of <div className='colorGradient'>chess</div>.
+              <div className='colorGradient'>17</div> games in the collection will be based on <div className='colorGradient'>great games</div> from the history of <div className='colorGradient'>chess</div>.
 
               <br />
               <br />
@@ -206,11 +206,11 @@ function Index () {
 
           <br />
 
-          {isReady && <div> Minted {supply}/{maxMintable}</div>}
+          {isReady && <div> Minted {supply}/{111} ({ (supply * 100 / 111).toFixed(2)}%)</div>}
 
           {!isReady && <div className='colorGradient'><br></br>Connect your wallet to claim</div>}
 
-          {isReady && <button className='button' style={{ marginLeft: 'auto', marginRight: 'auto', marginTop: 20 }} onClick={handleClaim}>
+          {isReady && supply < 111 && <button className='button' style={{ marginLeft: 'auto', marginRight: 'auto', marginTop: 20 }} onClick={handleClaim}>
             {isClaiming ? 'loading...' : 'Claim (20 FTM)'}
           </button>}
 

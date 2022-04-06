@@ -616,7 +616,7 @@ function Index() {
   ];
 
   let contractAddress = "0x846a150274e252392c4b6dabe19c6d28d8ca7865";
-  let jsonAddress = 'https://dweb.link/ipfs/QmSYsDXEcR41aRDAEzfsXR2BuXDWeW1NqSkC5bfRz4Uo2A/';
+  let videoAddress = 'https://infura-ipfs.io/ipfs/QmePQLHFXmw1X64L7YSxraTWTfPvz5cEX5Wo3vVSkUGLQy/';
 
   useEffect(() => {
     connectWallet();
@@ -699,8 +699,8 @@ function Index() {
                 <div style={{ padding: 20, width: 300 }}>
                   Fantom Chess #{game.id}
                   <br></br>
-                  <video width='200' muted height='200' autoPlay={true} loop poster={'https://www.fantomchess.com/assets/videos/' + game.id + '.mp4'} controls>
-                    <source src={'https://www.fantomchess.com/assets/videos/' + game.id + '.mp4'} type="video/mp4"></source>
+                  <video width='200' muted height='200' autoPlay={true} loop poster={videoAddress + game.id + '.mp4'} controls>
+                    <source src={videoAddress + game.id + '.mp4'} type="video/mp4"></source>
                   </video>
                   
 

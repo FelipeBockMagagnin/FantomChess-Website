@@ -6,18 +6,18 @@ export default function Header({ wallet, isReady, address, staticPage }) {
             <a className="tittle colorGradient" href='/'>Fantom Chess</a>
 
             <div className='menus'>
-                <div class="primary-navigation">
+                <div className="primary-navigation">
                     <ul style={{padding: 0}}>
                         <li>
                             <a href="#">Fantom Chess 3D</a>
-                            <ul class="dropdown">
+                            <ul className="dropdown">
                                 <li><a href="/">About/Mint</a></li>
                                 <li><a href="/chess-3d/view">My Games</a></li>
                             </ul>
                         </li>
                         <li>
                             <a href="#">Fantom Chess 2D</a>
-                            <ul class="dropdown">
+                            <ul className="dropdown">
                                 <li><a href="/chess-2d">About/Mint</a></li>
                                 <li><a href="/chess-2d/view">My Games</a></li>
                                 <li><a href="/chess-2d/rarity">Rarity</a></li>
@@ -26,7 +26,7 @@ export default function Header({ wallet, isReady, address, staticPage }) {
 
                         <li>
                             <a href="#">Fantom Chess Pieces</a>
-                            <ul class="dropdown">
+                            <ul className="dropdown">
                                 <li><a href="/pieces/about">About</a></li>
                                 <li><a href="/pieces/view">My Pieces</a></li>
                             </ul>
@@ -38,7 +38,7 @@ export default function Header({ wallet, isReady, address, staticPage }) {
 
                         <li>
                             <a href="#">Tournaments</a>
-                            <ul class="dropdown">
+                            <ul className="dropdown">
                                 <li><a href="/tournaments">Sign Up</a></li>
                                 <li><a href="/hall-of-fame">Hall of Fame</a></li>
                             </ul>

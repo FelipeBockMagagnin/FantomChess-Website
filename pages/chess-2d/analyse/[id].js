@@ -613,24 +613,24 @@ export default function analyse() {
                 </div>
 
                 <div id='info-analyze' style={{textAlign: 'center', backgroundColor: 'white', padding: 10, width: '80%', borderRadius: 20, marginBottom: 50}}>
-                    <span class="colorGradient">Infos</span>
+                    <span className="colorGradient">Infos</span>
 
                     <br/>
                     <br/>
 
-                    <span class="colorGradient">Moves:</span> {data?.attributes[0].value}
+                    <span className="colorGradient">Moves:</span> {data?.attributes[0].value}
 
                     <br/>
 
-                    <span class="colorGradient">Sound:</span> {data?.attributes[2].value}
+                    <span className="colorGradient">Sound:</span> {data?.attributes[2].value}
 
                     <br/>
 
-                    <span class="colorGradient">Championship Match:</span> {data?.attributes[3].value}
+                    <span className="colorGradient">Championship Match:</span> {data?.attributes[3].value}
 
                     <br/>
 
-                    <span class="colorGradient">Result:</span> {data?.attributes[4].value}
+                    <span className="colorGradient">Result:</span> {data?.attributes[4].value}
 
                     <br/>
 

@@ -15,7 +15,7 @@ export default function analyse() {
     const [contract, setContract] = useState(null);
     const [balance, setBalance] = useState(0);
 
-    const jsonAddress = 'https://www.fantomchess.com/assets/metadata/';
+    const jsonAddress = 'https://infura-ipfs.io/ipfs/QmdRZV7QgrREiaN2c1bakUZkA2ZiKcKwXv5tzS1xjn5Uwv/';
     const contractAddress = "0x1573b6699fcd7b89874c51c47b1d056eee9bd651";
 
     let abi = [
@@ -613,24 +613,24 @@ export default function analyse() {
                 </div>
 
                 <div id='info-analyze' style={{textAlign: 'center', backgroundColor: 'white', padding: 10, width: '80%', borderRadius: 20, marginBottom: 50}}>
-                    <span class="colorGradient">Infos</span>
+                    <span className="colorGradient">Infos</span>
 
                     <br/>
                     <br/>
 
-                    <span class="colorGradient">Moves:</span> {data?.attributes[0].value}
+                    <span className="colorGradient">Moves:</span> {data?.attributes[0].value}
 
                     <br/>
 
-                    <span class="colorGradient">Sound:</span> {data?.attributes[2].value}
+                    <span className="colorGradient">Sound:</span> {data?.attributes[2].value}
 
                     <br/>
 
-                    <span class="colorGradient">Championship Match:</span> {data?.attributes[3].value}
+                    <span className="colorGradient">Championship Match:</span> {data?.attributes[3].value}
 
                     <br/>
 
-                    <span class="colorGradient">Result:</span> {data?.attributes[4].value}
+                    <span className="colorGradient">Result:</span> {data?.attributes[4].value}
 
                     <br/>
 
