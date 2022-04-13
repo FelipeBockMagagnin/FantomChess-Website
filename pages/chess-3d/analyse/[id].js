@@ -15,7 +15,7 @@ export default function analyse() {
     const [contract, setContract] = useState(null);
     const [balance, setBalance] = useState(0);
 
-    const jsonAddress = 'https://infura-ipfs.io/ipfs/QmdRZV7QgrREiaN2c1bakUZkA2ZiKcKwXv5tzS1xjn5Uwv/';
+    const jsonAddress = 'https://www.fantomchess.com/metadata/';
     const contractAddress = "0x1573b6699fcd7b89874c51c47b1d056eee9bd651";
 
     let abi = [
