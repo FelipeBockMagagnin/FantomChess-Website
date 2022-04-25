@@ -37,11 +37,7 @@ export default function Header({ wallet, isReady, address, staticPage }) {
                         </li>
 
                         <li>
-                            <a href="#">Tournaments</a>
-                            <ul className="dropdown">
-                                <li><a href="/tournaments">Sign Up</a></li>
-                                <li><a href="/hall-of-fame">Hall of Fame</a></li>
-                            </ul>
+                            <a href="/tournaments">Tournaments</a>
                         </li>
                     </ul>
                 </div>
