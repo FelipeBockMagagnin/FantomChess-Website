@@ -45,7 +45,6 @@ function Index () {
                             <p>✅Announce Snapshop and Release dates</p>
                             <p>✅02/01/2022 Create Snapshot</p>
                             <p>✅04/01/2022 Airdrop</p>
-                            <p>🟦Rarity score and ranking</p>
                             <p>✅List on PaintSwap</p>
                             <p>✅List on NFTKEY</p>
                         </div>
@@ -66,9 +65,6 @@ function Index () {
                             <p>✅Announce Collection</p>
                             <p>✅Start minting</p>
                             <p>✅Analyze and view your Fantom Chess games in 2D</p>
-                            <p>🟦Analyze and view your Fantom Chess games in 3D \o/</p>
-                            <p>🟦Display rarity score and ranking</p>
-                            <p>🟦List on PaintSwap</p>
                             <p>🟦List on NFTKEY</p>
                             <p>🟦Sellout collection</p>
                         </div>
@@ -87,31 +83,13 @@ function Index () {
 
                         <div style={{ flex: 1, textAlign: 'left', marginLeft: 30 }}>
                             <p>🟦Create Token</p>
-                            <p>🟦Add liquidity (2º sales royalty fees)</p>
+                            <p>🟦Add liquidity (2º sales royalty fees and 30% of Fantom Chess 3D minting)</p>
                             <p>🟦Airdrop to Fantom Chess/Pieces holders</p>
-                            <p>🟦Implement new ways to increase token liquidity (30% of Fantom Chess 3D minting)</p>
-                            <p>🟦Create new ways to use the token</p>
                         </div>
                     </div>
 
                     <hr></hr>
 
-                    <br></br>
-                    <br></br>
-
-                    <h3 style={{ margin: 0 }} className='colorGradient'>More soon</h3>
-                    <br></br>
-                    <h3 style={{ margin: 0 }} className='colorGradient'>.</h3>
-                    <br></br>
-                    <h3 style={{ margin: 0 }} className='colorGradient'>.</h3>
-                    <br></br>
-                    <h3 style={{ margin: 0 }} className='colorGradient'>.</h3>
-                    <br></br>
-                    <h3 style={{ margin: 0 }} className='colorGradient'>.</h3>
-                    <br></br>
-                    <h3 style={{ margin: 0 }} className='colorGradient'>.</h3>
-                    <br></br>
-                    <h3 style={{ margin: 0 }} className='colorGradient'>.</h3>
                     <br></br>
                     <br></br>
                 </div>
