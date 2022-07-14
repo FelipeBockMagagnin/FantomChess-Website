@@ -206,14 +206,7 @@ function Index () {
 
           <br />
 
-          {isReady && <div> Minted {supply}/{111} ({ (supply * 100 / 111).toFixed(2)}%)</div>}
-
-          {!isReady && <div className='colorGradient'><br></br>Connect your wallet to claim</div>}
-
-          {isReady && supply < 111 && <button className='button' style={{ marginLeft: 'auto', marginRight: 'auto', marginTop: 20 }} onClick={handleClaim}>
-            {isClaiming ? 'loading...' : 'Claim (20 FTM)'}
-          </button>}
-
+          {<div> Minted 100/100 (100%)</div>}
         </div>
       </div>
     </Fragment>
